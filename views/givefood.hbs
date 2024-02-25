@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>give food</title>
+        <link rel="stylesheet" href="/css1/givefood.css">
+    <body>
+        <nav>
+            <img src= "/bg.jpg" class="main"></img>
+        </nav>
+        </nav>
+        <nav>
+            <img src= "/foodpic.jpg" class="new"></img>
+        </nav>
+        <div class="rect1">
+                <div class="container">
+                    <h2>Give Food</h2>
+                    <form class="give-food-form" action="/auth/givefood" method="post">
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            {{#if msg}}
+                            <p>{{msg}}</p>
+                            {{/if}}
+                        </div>
+                        <div class="form-group">
+                            <label>Type of Food:</label><br>
+                            <input type="radio" id="food-type1" name="food_type" value="Vegetarian" required>
+                            <label for="food-type1">Vegetarian</label><br>
+                            <input type="radio" id="food-type2" name="food_type" value="Non-Vegetarian">
+                            <label for="food-type2">Non-Vegetarian</label><br>
+                            <input type="radio" id="food-type3" name="food_type" value="Vegan">
+                            <label for="food-type3">Vegan</label><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="food-description">Food Description:</label>
+                            <textarea id="food-description" name="message" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location:</label>
+                            <input type="text" id="location" name="location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="tel" id="phone-number" name="phone" required>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </body>
+            </html>
+            
+        </div>
+        </div>

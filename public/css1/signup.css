@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',sans-serif;
+    box-sizing: border-box;
+}
+ .new{
+            height:90%;
+            position: absolute;
+            bottom:10;
+            right: 160px;
+          }
+    
+.main{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    @media (min-aspect-ratio:16/9){
+        .main{
+            width: 100%;
+            height: auto;
+    
+        }
+    }
+    @media (max-aspect-ratio:16/9){
+        .main{
+            width: auto;
+            height:50%;
+        }
+    }
+    .rect1{
+        position: absolute;
+      right: 160px;
+      bottom:10;
+      width: 1378px;
+      height: 90%;
+      background: rgba(255,246,126,0.2);
+      background-blend-mode: normal;
+      box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+    }
+    
+    
+    
+    .signin-form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .signin-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .signin-form input[type="text"],
+    .signin-form input[type="email"],
+    .signin-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .signin-form button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #FFECB3;
+        color:black;
+        cursor: pointer;
+    }
+    
+    .signin-form button:hover {
+        background-color: #FFC107;
+    
+    }
+    
+    .social-signin {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .social-signin a {
+        font-size: 24px;
+        margin: 0 10px;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .signup-link {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .signup-link a {
+        background-color: #FFC107;
+        text-decoration: none;
+    }
+    
+    .signup-link a:hover {
+        text-decoration: underline;
+    }

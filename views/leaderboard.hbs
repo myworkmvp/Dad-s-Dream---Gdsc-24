@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/leaderboard.css">
+    <title>Leaderboard</title>
+</head>
+<body>
+    <nav>
+        <div class="user-info">
+            <span>{{user.Email}}</span>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Leaderboard</h1>
+        <table>
+            <a href="/food" class="back-button">Back</a>
+            <thead>
+                <tr>
+                     <th>Name</th>
+                    <th>E-mail</th>
+                    <th>Coins</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboardBody">
+                {{#each user}}
+                <tr>
+            <td>{{this.Username}}</td>
+            <td>{{this.Email}}</td>
+            <td>{{this.Coin}}</td>
+            </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

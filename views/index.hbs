@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> login</title>
+        <link rel="stylesheet" href="/css1/login.css">
+    <body>
+        <nav>
+            <img src= "/bg.jpg" class="main"></img>
+        </nav>
+        </nav>
+        <nav>
+            <img src= "/foodpic.jpg" class="new"></img>
+        </nav>
+        <div class="rect1">
+                <div class="login-container">
+                    <form class="login-form" action="/auth/login" method="post">
+                        <h2>Login</h2>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                         {{#if msg}}
+                        <p>{{msg}}</p>
+                        {{/if}}
+                        <div class="form-links">
+                            <a href="/signup">Don't have an account?</a>
+                        </div>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </body>
+            </html>
+           
+        
+        </div>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> login</title>
+        <link rel="stylesheet" href="/css1/myaccount.css">
+        <nav>
+            <img src= "/bg.jpg" class="main"></img>
+        </nav>
+        </nav>
+        <nav>
+            <img src= "/foodpic.jpg" class="new"></img>
+        </nav>
+        <div class="rect1">
+         <body>
+             <div class="user-details">
+        <div>
+            <img src="/user.jpg" alt="User Icon">
+            <h2>{{user.Username}}</h2>
+        </div>
+        <div>
+            <p>{{user.Email}}</p>
+            {{#if user.Coin}}
+            <p>Earned Coins: {{user.Coin}}</p>
+            {{else}}
+            <p>Earned Coins:0</p>
+             {{/if}}
+        <a href="/food" class="back-button">Back</a>
+        </div>
+    </div>
+                
+    </body>
+    </html>
+

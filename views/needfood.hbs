@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>needfood</title>
+        <link rel="stylesheet" href="/css1/needfood.css">
+
+    <body>
+        <nav>
+            <img src= "/bg.jpg" class="main"></img>
+        </nav>
+        <nav>
+            <img src= "/foodpic.jpg" class="new"></img>
+        </nav>
+        <div class="rect1">
+           {{#each user}}
+           <div class="container">
+                <div class="user">
+                  <h3>{{this.Date}}</h3>
+                  <p>Name:<b>{{this.Username}}</b></p>
+                  <p>Email: {{this.Email}}</p>
+                  <p>Phone Number: {{this.Phone}}</p>
+                  <p>Location: {{this.Location}}</p>
+                 </div>
+                <div class="descr">
+                <p>{{this.Food_type}} Food</p>
+                <p>About Food:</p>
+                <p>{{this.Message}}</p>
+                </div>
+            </div>
+            {{/each}}
+           
+        
+        </div>
